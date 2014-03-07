@@ -1,0 +1,21 @@
+{
+  "name": "tarmstro",
+  "version": "0.0.0",
+  "description": "Homepage",
+  "main": "web.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tarmstro/tarmstro.git"
+  },
+  "author": "Tom Armstrong",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "a2d212611ae9cd214d76290b7ed8d51ce7c40c29",
+  "dependencies": {
+    "logfmt": "~0.21.0",
+    "express": "~3.5.0"
+  }
+}
