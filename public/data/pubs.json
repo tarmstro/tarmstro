@@ -1,0 +1,30 @@
+[
+	{
+		"title": "Unsupervised Discovery of Phoneme Boundaries in Multi-Speaker Continuous Speech",
+		"abstract": "Children rapidly learn the inventory of phonemes used in their native tongues. Computational approaches to learning phoneme boundaries from speech data do not yet reach the level of human performance. We present an algorithm that operates on, qualitatively, similar data to those children receive: natural language utterances from multiple speakers. Our algorithm is unsupervised and discovers phoneme boundary positions in speech. The approach draws inspiration from the word and text segmentation literature. To demonstrate the efficacy of our algorithm on speech data, we present empirical results of our method using the TIMIT data set. Our method achieves F-measure scores in the 0.68 - 0.73 range for locating phoneme boundary positions.",
+		"author":[
+			{"name": "Tom Armstrong"},
+			{"name": "Stephanie Antetomaso"}
+		],
+		"type": "inproceedings",
+		"year": "2011",
+		"booktitle": "Proceedings of the IEEE International Conference on Development and Learning (ICDL)",
+		"doi": "10.1109/DEVLRN.2011.6037316",
+		"conference": "IEEE International Conference on Development and Learning (ICDL)"
+	},
+	{
+		"title":"Classification of Patients Using Novel Multivariate Time Series Representations of Physiological Data",
+		"abstract": "In this paper we present two novel multivariate time series representations to classify physiological data of different lengths. The representations may be applied to any group of multivariate time series data that examine the state or health of an entity. Multivariate Bag-of-Patterns and Stacked Bags of-Patterns improve on their univariate counterpart, inspired by the bag-of-words model, by using multiple time series and analyzing the data in a multivariate fashion. We also borrow techniques from the natural language processing domain such as term frequency and inverse document frequency to improve classification accuracy. We introduce a technique named inverse frequency and present experimental results on classifying patients who have experienced acute episodes of hypotension.",
+		"author": [
+			{"name": "Patricia Ordonez"},
+			{"name": "Tom Armstrong"},
+			{"name": "Tim Oates"},
+			{"name": "Jim Fackler"}
+		],
+		"type": "inproceedings",
+		"year": "2011",
+		"booktitle": "Proceedings of the 10th International Conference on Machine Learning and Applications (ICMLA)",
+		"doi": "10.1109/ICMLA.2011.46",
+		"conference": "International Conference on Machine Learning and Applications (ICMLA)"
+	}
+]
