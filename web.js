@@ -9,6 +9,10 @@ var express = require("express");
 
 var app = express();
 
+process.on('uncaughtException', function (err) {
+  console.log('Caught exception: ' + err);
+  app.use(function(error, req, res, next) { res.send('500: Internal Server Error', 500); });
+});
 
 app.use(logfmt.requestLogger());
 
@@ -40,22 +44,11 @@ app.configure(function(){
 });
 
 
-app.get('/', function (req, res, next) {
-    var context = {
-		title: "My First Blog Post!",
-		author: {
-			id: 47,
-			name: "Yehuda Katz"
-		},
-		body: "My first post. Wheeeee!",
-		showTitle: true
-	};
-    res.send('index.html');
-});
-
-
+app.get('/', function (req, res, next) { res.send('index.html'); });
 app.get('/publications/', publications.getPapers);
 app.get('/publications/:id', publications.getPaperByID);
+app.use(function(req, res) { res.send('404: Page not Found', 404); });
+
 
 
 var port = Number(process.env.PORT || 5000);

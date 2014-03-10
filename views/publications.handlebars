@@ -20,21 +20,14 @@
     <div class="entry">
         <h1>{{title}}</h1>
         <h2>{{conference}}, {{year}}</h2>
-        <div class="body">
-            {{{body}}}
-        </div>
+        <blockquote>
+            {{abstract}}
+        </blockquote>
     </div>
 
     {{#list author}}{{name}}{{/list}}
 
 
-    <p>{{abstract}}</p>
-
-    <!-- Calls `foo` helper, overridden at render-level. -->
-    <p>{{foo}}</p>
-
-    <!-- Calls `bar` helper, defined at instance-level. -->
-    <p>{{bar}}</p>
-
+    <p>DOI: <a href="http://dx.doi.org/{{doi}}">{{doi}}</a></p>
 </body>
 </html>

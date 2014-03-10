@@ -14,6 +14,7 @@ exports.getPapers = function (req, res, next) {
 	});
 };
 
+
 exports.getPaperByID = function (req, res) {
 	var id = req.params.id;
 	mongo.Db.connect(mongoUri, function (err, db) {
@@ -41,4 +42,5 @@ var populateDB = function() {
 	}); 
 };
 
-populateDB();
+
+// populateDB();
