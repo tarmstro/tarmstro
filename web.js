@@ -50,7 +50,7 @@ app.get('/', function (req, res, next) {
 		body: "My first post. Wheeeee!",
 		showTitle: true
 	};
-    res.render('home', context);
+    res.send('index.html');
 });
 
 
