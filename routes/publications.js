@@ -7,8 +7,9 @@ exports.getPapers = function (req, res, next) {
 	mongo.Db.connect(mongoUri, function (err, db) {
 		db.collection('publications', function(err, collection){
 			collection.find().toArray(function(err, items) {
-				console.log(items);
-				res.render('publications', items);
+				var context = {"papers": items};
+				console.log(context);
+				res.render('publist', context);
 			});
 		});
 	});
@@ -43,4 +44,4 @@ var populateDB = function() {
 };
 
 
-// populateDB();
+populateDB();
