@@ -24,20 +24,27 @@
     <!-- Bootstrap core CSS -->
     <link href="../public/css/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
     <link href="../public/css/bootstrap.css" rel="stylesheet">
-
+    <style>
+        mark {background:#ff950a;color:#fff;padding:5px 3px 6px;white-space:nowrap}
+        em {background:#00ba48;color:#fff;font-style:normal;padding:1px 2px 2px;white-space:nowrap}
+    </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>Publications</h1>
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <font size="12">Publications</font>
+        </div>
+    </div>
     {{#each papers}}
         <div class="row">
             <div class="col-md-8">
                 <h2>{{this.title}}</h2>
-                <p class="lead" style="text-indent:10px;">by {{this.friendly_author}}</p>
+                <p class="lead" style="text-indent:10px;">by {{{this.friendly_author}}}</p>
                 <blockquote>
                   <p class="text-info">{{this.abstract}}</p>
-                  <footer>{{booktitle}}, {{year}}</footer>
+                  <footer>{{booktitle}}, <em>{{year}}</em></footer>
                 </blockquote>
             </div>
             <div class="col-md-4">
