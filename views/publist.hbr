@@ -30,21 +30,38 @@
     </style>
 </head>
 <body>
-
 <div class="container">
     <div class="row">
         <div class="col-md-4 col-md-offset-4">
             <font size="12">Publications</font>
         </div>
     </div>
+
+
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <table class="table table-striped">
+                {{#each papers}}
+                    <tr>
+                        <td>
+                            <a href="#{{this.filename}}">{{this.title}}</a>
+                        </td>
+                    </tr>
+                {{/each}}
+            </table>
+        </div>
+    </div>
+
+
     {{#each papers}}
+        <a id="{{filename}}"></a>
         <div class="row">
             <div class="col-md-8">
                 <h2>{{this.title}}</h2>
                 <p class="lead" style="text-indent:10px;">by {{{this.friendly_author}}}</p>
                 <blockquote>
                   <p class="text-info">{{this.abstract}}</p>
-                  <footer>{{booktitle}}, <em>{{year}}</em></footer>
+                  <footer>{{booktitle}}, {{year}}</footer>
                 </blockquote>
             </div>
             <div class="col-md-4">
