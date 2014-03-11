@@ -31,5 +31,140 @@
 		"doi": "10.1109/ICMLA.2011.46",
 		"conference": "International Conference on Machine Learning and Applications (ICMLA)",
 		"filename": "C01_ICMLA_2011"
+	},
+
+	{
+		"title":"Unsupervised Discovery of Motifs Under Amplitude Scaling and Shifting in Time Series Databases",
+		"abstract": "We introduce an algorithm, MD-RP, for unsupervised discovery of frequently occurring patterns, or motifs, in time series databases. Unlike prior approaches that can handle pattern distortion in the time dimension only, MD-RP is robust at finding pattern instances with amplitude shifting and with amplitude scaling. Using an established discretization method, SAX, we augment the existing real-valued time series representation with additional features to capture shifting and scaling. We evaluate our representation change on the modified randomized projection algorithm on synthetic data with planted, known motifs and on real-world data with known motifs (e.g., GPS). The empirical results demonstrate the effectiveness of MD-RP at discovering motifs that are undiscoverable by prior approaches. Finally, we show that MD-RP can be used to find subsequences of time series that are the least similar to all other subsequences.",
+		"author": [
+			{"name": "Tom Armstrong"},
+			{"name": "Eric Drewniak"}
+		],
+		"friendly_author": "Tom Armstrong and Eric Drewniak",
+		"type": "inproceedings",
+		"year": "2011",
+		"booktitle": "Proceedings of the 7th International Conference on Machine Learning and Data Mining in Pattern Recognition (MLDM)",
+		"doi": "10.1007/978-3-642-23199-5_40",
+		"conference": "International Conference on Machine Learning and Data Mining in Pattern Recognition (MLDM)",
+		"filename": "C02_MLDM_2011"
+	},
+
+	{
+		"title":"Robotics and Intelligent Systems for Social and Behavioral Science Undergraduates",
+		"abstract": "In this article, we share our experiences offering an original course entitled Intelligent Systems targeted at undergraduate social and behavioral science students. Intelligent Systems provides a rigorous introduction to robotics and surveys selected topics in articial intelligence. This course is tailored to students with little mathematical background and no programming experience. We offer best practices and information from successful course components and ideas for tailoring course content to social and behavioral science students. The motivation for this course comes from the wide interdisciplinary appeal of robotics and articial intelligence. They have been leveraged to improve recruitment to the major and to expose students in other disciplines to computational thinking. However, no offerings of CS0 that exclusively cater to the large social and behavioral science population are available that focus on intelligent systems. Robots and AI systems are affordable and accessible to this group of students. We propose our solution to this problem and argue for offering multiple, interdisciplinary CS0 offerings.",
+		"author": [
+			{"name": "Tom Armstrong"}
+		],
+		"friendly_author": "Tom Armstrong",
+		"type": "inproceedings",
+		"year": "2010",
+		"booktitle": "Proceedings of the 15th Annual Conference on Innovation and Technology in Computer Science Education (ITiCSE)",
+		"doi": "10.1145/1822090.1822146",
+		"conference": "Annual Conference on Innovation and Technology in Computer Science Education (ITiCSE)",
+		"filename": "C03_ITiCSE_2010"
+	},
+
+	{
+		"title": "Connecting Across Campus",
+		"abstract": "Computer science holds a unique position to craft multidisciplinary curricula for the new generation of faculty and students across the academy who increasingly rely on computing for their scholarship. We propose that computer science programs cease curricula models that begin with a two-course sequence that emulates the natural sciences and mathematics. We report on an aggressive strategy to work with faculty from across the disciplines of arts, humanities, and the social and life sciences to help design and deliver sets of multidisciplinary, applied, and 'connected' pairs of introductory courses. Preliminary results at our small liberal arts college include an increase in the percentage of women enrolling in our connected courses, more students taking an additional course in computing, a faculty energized with sharing their research early on, and new interdisciplinary research opportunities for computer science faculty and students.",
+		"author": [
+			{"name": "Mark D. LeBlanc"},
+			{"name": "Tom Armstrong"},
+			{"name": "Michael B. Gousie"}
+		],
+		"friendly_author": "Mark D. LeBlanc, Tom Armstrong, and Michael B. Gousie",
+		"type": "inproceedings",
+		"year": "2010",
+		"booktitle": "Proceedings of the 41st ACM Technical Symposium on Computer Science Education (SIGCSE)",
+		"doi": "10.1145/1734263.1734280",
+		"conference": "ACM Technical Symposium on Computer Science Education (SIGCSE)",
+		"filename": "C04_SIGCSE_2010"
+	},
+
+	{
+		"title": "Learning in the Lexical-Grammatical Interface",
+		"abstract": "Children are facile at both discovering word boundaries and using those words to build higher-level structures in tandem. Current research treats lexical acquisition and grammar induction as two distinct tasks. Doing so has led to unreasonable assumptions. Existing work in grammar induction presupposes a perfectly segmented, noise-free lexicon, while lexical learning approaches largely ignore how the lexicon is used. This paper combines both tasks in a novel framework for bootstrapping lexical acquisition and grammar induction. We present an algorithm that iteratively learns a lexicon and a grammar for a class of regular languages in polynomial time, and we report experimental results for benchmark languages.",
+		"author": [
+			{"name": "Tom Armstrong"},
+			{"name": "Tim Oates"}
+		],
+		"friendly_author": "Tom Armstrong and Tim Oates",
+		"type": "inproceedings",
+		"year": "2008",
+		"booktitle": "Proceedings of the 21st International Florida Artificial Intelligence Research Society Conference (FLAIRS)",
+		"doi": "",
+		"conference": "International Florida Artificial Intelligence Research Society Conference (FLAIRS)",
+		"filename": "C05_FLAIRS_2008"
+	},
+
+	{
+		"title": "RIPTIDE: Segmenting Data Using Multiple Resolutions",
+		"abstract": "Segmenting real-valued data, be it speech waveforms into words and phrases or temperature readings into environmental epochs, is a challenging, open problem. We introduce an unsupervised, domain-independent algorithm, RIPTIDE, that discovers segments in real-valued time series data while constructing a hierarchy of segments. Our top-down approach begins with a coarse approximation of the input data, finds segment boundaries, and recursively considers discovered segments with a finer resolution. We demonstrate the drawbacks of an existing segmentation algorithm and the multiresolution capabilities of a discretization method for time series.",
+		"author": [
+			{"name": "Tom Armstrong"},
+			{"name": "Tim Oates"}
+		],
+		"friendly_author": "Tom Armstrong and Tim Oates",
+		"type": "inproceedings",
+		"year": "2007",
+		"booktitle": "Proceedings of the 6th IEEE International Conference on Development and Learning (ICDL)",
+		"doi": "10.1109/DEVLRN.2007.4354058",
+		"conference": "IEEE International Conference on Development and Learning (ICDL)",
+		"filename": "C06_ICDL_2007"
+	},
+
+	{
+		"title": "Discovering Patterns In Real-valued Time Series",
+		"abstract": "This paper describes an algorithm for discovering variable length patterns in real-valued time series. In contrast to most existing pattern discovery algorithms, ours does not first discretize the data, runs in linear time, and requires constant memory. These properties are obtained by sampling the data stream rather than processing all of the data. Empirical results show that the algorithm performs well on both synthetic and real data when compared to an exhaustive algorithm.",
+		"author": [
+			{"name": "Joe Catalano"},
+			{"name": "Tom Armstrong"},
+			{"name": "Tim Oates"}
+		],
+		"friendly_author": "Joe Catalano, Tom Armstrong, and Tim Oates",
+		"type": "inproceedings",
+		"year": "2006",
+		"booktitle": "Proceedings of the 10th European Conference on Principles and Practice of Knowledge Discovery in Databases (PKDD)",
+		"doi": "10.1007/11871637_44",
+		"conference": "European Conference on Principles and Practice of Knowledge Discovery in Databases (PKDD)",
+		"filename": "C07_PKDD_2006"
+	},
+
+	{
+		"title": "Inferring Grammars for Mildly Context-Sensitive Languages in Polynomial-Time",
+		"abstract": "Natural languages contain regular, context-free, and context-sensitive syntactic constructions, yet none of these classes of formal languages can be identified in the limit from positive examples. Mildly context-sensitive languages are able to represent some context-sensitive constructions, those most common in natural languages, such as multiple agreement, crossed agreement, and duplication. These languages are attractive for natural language applications due to their expressiveness, and the fact that they are not fully context-sensitive should lead to computational advantages as well. We realize one such computational advantage by presenting the first polynomial-time algorithm for inferring Simple External Context Grammars, a class of mildly context-sensitive grammars, from positive examples.",
+		"author": [
+			{"name": "Tim Oates"},
+			{"name": "Tom Armstrong"},
+			{"name": "Leonor Becerra Bonache"},
+			{"name": "Mike Atamas"}
+		],
+		"friendly_author": "Tim Oates, Tom Armstrong, Leonor Becerra Bonache, and Mike Atamas",
+		"type": "inproceedings",
+		"year": "2006",
+		"booktitle": "Proceedings of the 8th International Colloquium on Grammatical Inference (ICGI)",
+		"doi": "10.1007/11872436_12",
+		"conference": "International Colloquium on Grammatical Inference (ICGI)",
+		"filename": "C08_ICGI_2006"
+	},
+
+	{
+		"title": "On the Relationship Between Lexical Semantics and Syntax for the Inference of Context-Free Grammars",
+		"abstract": "Natural languages contain regular, context-free, and context-sensitive syntactic constructions, yet none of these classes of formal languages can be identified in the limit from positive examples. Mildly context-sensitive languages are able to represent some context-sensitive constructions, those most common in natural languages, such as multiple agreement, crossed agreement, and duplication. These languages are attractive for natural language applications due to their expressiveness, and the fact that they are not fully context-sensitive should lead to computational advantages as well. We realize one such computational advantage by presenting the first polynomial-time algorithm for inferring Simple External Context Grammars, a class of mildly context-sensitive grammars, from positive examples.",
+		"author": [
+			{"name": "Tim Oates"},
+			{"name": "Tom Armstrong"},
+			{"name": "Justin Harris"},
+			{"name": "Mark Nejman"}
+		],
+		"friendly_author": "Tim Oates, Tom Armstrong, Justin Harris, and Mark Nejman",
+		"type": "inproceedings",
+		"year": "2004",
+		"booktitle": "Proceedings of the 19th National Conference on Artificial Intelligence (AAAI)",
+		"doi": "",
+		"conference": "National Conference on Artificial Intelligence (AAAI)",
+		"filename": "C09_AAAI_2004"
 	}
+
+
 ]
