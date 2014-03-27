@@ -15,3 +15,17 @@ exports.getPapers = function (req, res, next) {
 		});
 	});
 };
+
+var populateDB = function() {
+ 	fs.readFile("public/data/pubs.json", function(err, f){
+ 		var papers = JSON.parse(f.toString());
+ 		mongo.Db.connect(mongoUri, function (err, db) {
+ 			db.collection('publications', function(err, collection){
+ 				collection.remove({}, {}, function(err, result) {});
+ 				collection.insert(papers, {safe: true}, function(err, result) {});
+   			});
+ 		}); 
+ 	}); 
+ };
+ 
+ populateDB();
